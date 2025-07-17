@@ -15,6 +15,21 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <!-- Filter Toolbar -->
+        <div id="filter-toolbar" class="toolbar">
+          <label for="filter-category">Category:</label>
+          <select id="filter-category">
+            <option value="">All</option>
+            <!-- Categories will be loaded here -->
+          </select>
+          <label for="sort-activities">Sort by:</label>
+          <select id="sort-activities">
+            <option value="name">Name</option>
+            <option value="time">Time</option>
+          </select>
+          <label for="search-activities">Search:</label>
+          <input type="text" id="search-activities" placeholder="Search activities..." />
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
